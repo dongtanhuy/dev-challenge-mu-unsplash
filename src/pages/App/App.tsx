@@ -1,11 +1,12 @@
 import React from 'react';
-import { Header } from '../../components';
+import { Header, Gallery } from '../../components';
 import './App.scss';
 
 const App = () => {
   return (
     <div className="App">
       <Header />
+      <Gallery />
     </div>
   );
 }

@@ -6,3 +6,36 @@
     justify-content: space-between;
   }
 }
+
+.SearchBar {
+  border: 1px solid #BDBDBD;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1));
+  border-radius: 24px;
+  height: 55px;
+  width: 300px;
+  display: flex;
+  padding: 15px;
+  justify-self: start;
+  margin-left: 60px;
+  i {
+    color: #BDBDBD;
+  }
+  &__searchInput {
+    border: none;
+    width: 100%;
+    outline: none;
+    margin-left: 20px;
+    height: 22px;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color:  black;
+    ::placeholder {
+      font-weight: 500;
+      color: #BDBDBD;
+    }
+  }
+}

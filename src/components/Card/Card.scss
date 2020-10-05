@@ -1,0 +1,9 @@
+.Card {
+  margin: 23px;
+  &__Image {
+    width: 385px;
+    border-color: transparent;
+    border-radius: 24px;
+    text-align: center;
+  }
+}

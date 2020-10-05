@@ -12,7 +12,10 @@ const Header: React.FC<Props> = () => {
     <div className="Header">
       <div className="Header__rightHandSide">
         <img src={logo} alt="logo" />
-        <div>This is search bar </div>
+        <div className="SearchBar">
+          <i className="material-icons">search</i>
+          <input type="text" className="SearchBar__searchInput" placeholder="Search by name" />
+        </div>
       </div>
       <Button text="Add a photo" onClick={() => console.log('click')} />
     </div>
