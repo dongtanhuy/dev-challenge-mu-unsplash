@@ -17,7 +17,7 @@ const Gallery: React.FC<any> = (props) => {
       {
         images.map((image, index)  => (
           <li key={index} >
-            <Card src={image} label="Label" onDelete={() => console.log('del')} />
+            <Card src={image} label="Label" />
           </li>
         ))
       }

@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from '../../assets/img/my_unsplash_logo.svg';
+import { openAddModalAction } from '../../redux/actions/modal.action';
+import { useDispatch } from 'react-redux';
 import { Button } from '../../components';
 
 import './Header.scss';
@@ -8,6 +10,7 @@ interface Props {
 }
 
 const Header: React.FC<Props> = () => {
+  const dispatch = useDispatch();
   return (
     <div className="Header">
       <div className="Header__rightHandSide">
@@ -17,7 +20,7 @@ const Header: React.FC<Props> = () => {
           <input type="text" className="SearchBar__searchInput" placeholder="Search by name" />
         </div>
       </div>
-      <Button text="Add a photo" onClick={() => console.log('click')} />
+      <Button type="submit" text="Add a photo" onClick={() => dispatch(openAddModalAction())} />
     </div>
   )
 }

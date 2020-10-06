@@ -1,15 +1,20 @@
 import React from 'react';
+import { openDeleteModalAction } from '../../redux/actions/modal.action';
+import { useDispatch } from 'react-redux';
 
 import './Card.scss';
 
 interface Props {
   src: string,
   label: string,
-  onDelete: () => void
 }
 
-const Card: React.FC<Props> = ({ src, label, onDelete }: Props) => {
+const Card: React.FC<Props> = ({ src, label }: Props) => {
+  const dispatch = useDispatch();
 
+  const onDelete = () => {
+    dispatch(openDeleteModalAction())
+  }
   return (
     <div className="Card">
       <div className="Card__DeleteBtn" onClick={onDelete}>delete</div>

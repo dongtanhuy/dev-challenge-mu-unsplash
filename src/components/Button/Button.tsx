@@ -3,11 +3,12 @@ import './Button.scss';
 
 interface Props {
   text: string,
+  type: string,
   onClick: () => void
 }
-const Button: React.FC<Props> = ({ text, onClick }) => {
+const Button: React.FC<Props> = ({ text, onClick, type }) => {
   return (
-    <button className="Button" onClick={ onClick}>
+    <button className={`Button ${type}`} onClick={ onClick}>
       {text}
     </button>
   )
