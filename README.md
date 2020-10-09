@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">My Unsplash app with React and Firebase Realtime database</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://sharp-hugle-07825d.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/dongtanhuy/dev-challenge-my-unsplash">
       Solution
     </a>
     <span> | </span>
@@ -37,22 +37,25 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](./demo.png)
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
+  * You can take a look [here](https://sharp-hugle-07825d.netlify.app/) 
 - What was your experience?
+  * I am trying to apply Typescript a React project. So this is an opportunity for me to learn typescript with React
 - What have you learned/improved?
-- Your wisdom? :)
+  * I think using typescript takes me more time than using just javascript. However, I think it will help to reduce a lot of potential bugs related to Type checking
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Redux](https://redux.js.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Firebase](https://firebase.google.com/docs/database)
 
 ## Features
 
@@ -68,14 +71,23 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
+$ git clone https://github.com/dongtanhuy/dev-challenge-my-unsplash
 
 # Install dependencies
-$ npm install
+$ yarn install
+
+# Create .env.local file
+$ nano .env.local
+REACT_APP_FIREBASE_API_KEY=<Firebase API Key>
+REACT_APP_FIREBASE_AUTH_DOMAIN=<Firebase Auth domain>
+REACT_APP_FIREBASE_DATABASE_URL=<Firebase Database url>
 
 # Run the app
-$ npm start
+$ yarn start
 ```
+
+## Deploy
+- [Netlify](https://www.netlify.com/)
 
 ## Acknowledgements
 
@@ -84,9 +96,10 @@ $ npm start
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
+- [How to deploy with Netlify](https://dev.to/easybuoy/deploying-react-app-from-github-to-netlify-3a9j)
+- [Firebase Database and React tutorial](https://codesource.io/understanding-firebase-realtime-database-using-react/)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [www.juliandong.com](https://www.juliandong.com)
+- GitHub [@dongtanhuy](https://github.com/dongtanhuy)
