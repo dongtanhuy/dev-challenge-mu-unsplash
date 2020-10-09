@@ -16,6 +16,16 @@ const style = {
   }
 }
 
+interface Props {
+  isOpen: boolean,
+  children: React.ReactNode,
+  title: string,
+  onMainButtonSubmit: (e: any) => void,
+  mainButtonText: string,
+  type: string,
+  onCancel: (e: any) => void
+}
+
 const ModalBase = ({ isOpen, children, title, onMainButtonSubmit, mainButtonText, type="submit", onCancel }) => {
 
   return (

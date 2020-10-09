@@ -2,8 +2,15 @@ import React from 'react';
 
 import './Input.scss';
 
+interface Props {
+  label: string,
+  onChange: (e:any) => void,
+  value: string,
+  type: string,
+  placeholder: string
+}
 
-const Input = ({ label, onChange, value, placeholder, type }) => {
+const Input: React.FC<Props> = ({ label, onChange, value, placeholder, type }) => {
   return  (
     <div className="Input">
       <label>{label}</label>
