@@ -17,9 +17,6 @@ const AddPhotoModal:React.FC<Props>  = ({ isOpenModal }) => {
   }
 
   const onSubmit = () => {
-    console.log('URL', url);
-    console.log('label', label);
-    console.log('Date', new Date().getTime());
     const photosRef = db.ref('photos');
     photosRef.push().set({
       label,
